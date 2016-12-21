@@ -25,7 +25,7 @@ SECRET_KEY = 'z!j6lfd1ae=(3@*m2epwq^hnj@3@n&6bzm#v1b^-vav0&io^o#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -126,3 +126,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+try:
+    from .settings_local import *  # NOQA 
+except ImportError:
+    pass
