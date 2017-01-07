@@ -10,12 +10,11 @@ from player.models import Music
 
 def home(request):
     context = {}
-
     context['playlist'] = []
     for music in Music.objects.all():
-        context['playlist'].append({'url'    : '/player/music-dl/%d'%(music.id),
-                                    'name'   : music.name,
-                                    'artist' : music.artist})
+        context['playlist'].append({'url': '/player/music-dl/%d'%(music.id),
+                                    'name': music.name,
+                                    'artist': music.artist})
 
     return render(request, "player_index.html", context=context)
 
