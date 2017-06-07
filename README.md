@@ -1,4 +1,4 @@
-# getnextmusic
+# GetNextMusic
 
 apt-get install git
 apt-get install build-essential
@@ -12,3 +12,6 @@ apt-get install libmysqlclient-dev
 apt-get install gunicorn
 
 pip3 install Django==1.10
+
+
+##### Contact / Support / Infos : remaudcorentin.dev@gmail.com
