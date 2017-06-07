@@ -1,6 +1,6 @@
 # GetNextMusic
 
-### Status : In progress... Beta 1.0 relase on September 2017  
+### Status : In progress... Beta 1.0 release on September 2017  
 
 apt-get install git
 apt-get install build-essential
